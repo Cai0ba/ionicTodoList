@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'tarefa-nova',
+    loadChildren: () => import('./tarefa-nova/tarefa-nova.module').then( m => m.TarefaNovaPageModule)
+  },
+  {
+    path: 'tarefa-atualiza',
+    loadChildren: () => import('./tarefa-atualiza/tarefa-atualiza.module').then( m => m.TarefaAtualizaPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'header',
+    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
+  },
 ];
 
 @NgModule({

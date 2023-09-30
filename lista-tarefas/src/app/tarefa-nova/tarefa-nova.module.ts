@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { TarefaNovaPageRoutingModule } from './tarefa-nova-routing.module';
 
-import { HomePage } from './home.page';
+import { TarefaNovaPage } from './tarefa-nova.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    TarefaNovaPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [TarefaNovaPage]
 })
-export class HomePageModule {}
+export class TarefaNovaPageModule {}
